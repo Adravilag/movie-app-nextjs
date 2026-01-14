@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "export": "next build && next export"
+    "export": "next build && node scripts/copy-export.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
@@ -26,5 +26,4 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
-  
 }
