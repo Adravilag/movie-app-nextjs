@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  # The Next.js plugin writes final static assets to `.netlify/output/public`.
+  publish = ".netlify/output/public"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  # Keep default settings; plugin will create functions under .netlify/functions-internal
